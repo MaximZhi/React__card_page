@@ -1,0 +1,27 @@
+.myModal{
+    position: fixed;
+    display: none;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(173, 22, 158, 0.42);
+}
+
+.myModal.active{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.myModalContent{
+padding: 6px;
+margin: 24px;
+background-color: #9d7bc4;
+min-width: 240px;
+min-height: 420px;
+border-radius: 6px;
+}

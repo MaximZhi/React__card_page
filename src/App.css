@@ -1,38 +1,86 @@
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.post{
+  margin: 24px;
+  border: 3px solid ;
+  box-shadow: 6px 8px 4px 2px rgba(0, 0, 255, .2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #9d7bc4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.post__title{
+  font-family: 'Times New Roman', Times, serif;
+  font: 1em sans-serif;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: block;
+  padding: 12px;
+  margin: 6px;
+  position: left;
+  text-align: left;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.post__content{
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 12px;
+  margin: 6px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post__btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 6px 24px;
+}
+
+.item-enter {
+  transform: translateX(-420px);
+}
+
+.item-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+
+.item-exit {
+  transform: translateX(0px);
+}
+
+.item-exit-active {
+  transform: translateX(-420px);
+  transition: all 500ms ease-in;
+}
+
+.Navbar{
+border: 2px solid #9d7bc4;
+font-weight: bold;
+height: 50px;
+width: 100vw;
+display: flex;
+align-items: center;
+padding: 0 15px;
+}
+
+.Navbar__links{
+text-align: center;
+}
+
+.login{
+  display: contents;
+  margin: 24px;
+  max-width: 240px;
+}
+
+.home__btn{
+margin-bottom: 0;
+position: relative;
 }

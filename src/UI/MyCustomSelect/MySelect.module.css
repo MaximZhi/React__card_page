@@ -1,0 +1,11 @@
+.mySelect{
+display: flex;
+padding: 6px;
+margin: 24px;
+font-size: 1em;
+border-radius: 6px;
+box-sizing: border-box;
+box-shadow: 6px 8px 4px 2px rgba(0, 0, 255, .2);
+border: 3px solid #8A2BE2;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
